@@ -7,6 +7,9 @@ import one.digitalinnovation.digionebank.Pessoa
 import java.math.BigDecimal
 
 fun main(){
-    val maria = Gerente("Maria", "123456789", 5000.00)
+    val maria = Gerente("Maria", "123456789", 5000.00,"senha125")
+
     ImprimeRelatorioFuncionario.imprime(maria)
+
+    TesteAutenticacao().autentica(maria)
 }
